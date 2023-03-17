@@ -386,10 +386,28 @@
                 </ul>
 
             </div>
+
+            <div class="form-conteiner">
+                <form>
+                    <h4 class="social-text">Subscribe</h4>
+
+                    <div class="form-list">
+                        <input class="form-input" type="email" name="email" placeholder="E-mail" aria-label="Email" />
+
+                        <button class="form-btn" type="submit">Subscribe
+                            <svg width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-plane"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </footer>
     <!-- /footer -->
 
+    <!-- modal -->
     <div class="backdrop  is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
@@ -397,9 +415,34 @@
                     <use href="./images/symbol-defs.svg#icon-modal-close"></use>
                 </svg>
             </button>
+
+            <form class="form" action="">
+                <h4 class="form-text">Leave your contacts and we will call you back</h4>
+                <div class="form-field"><label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="form-field"><label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+
+                <div class="form-field"><label for="mail">Email</label>
+                    <input type="email" name="mail" id="mail">
+                </div>
+
+                <div class="comment"><label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" placeholder="Text input" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class=""><input type="checkbox" name="policy" id="policy">
+                    <label for="policy">I accept the terms and conditions of the Privacy Policy</label>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+
         </div>
     </div>
-
+    <!-- /modal -->
     <script src="./js/modal.js"></script>
 </body>
 

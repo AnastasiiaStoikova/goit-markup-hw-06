@@ -98,6 +98,7 @@ img {
 .header-link {
     transition: color var(--second-accent-color);
 }
+
 .second-logo {
     color: var(--title-text-color);
 }
@@ -395,8 +396,8 @@ img {
 /* ---------------footer---------------- */
 
 .footer {
-    /* display: flex; */
-    background-color: #2E2F42;
+
+    background-color: var(--title-text-color);
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -469,6 +470,53 @@ img {
 
 .social-item:hover {
     background: #31D0AA;
+}
+
+.form-conteiner {
+
+    margin-left: 80px;
+    width: 453px;
+}
+
+.form-list {
+    display: flex;
+
+}
+
+.form-input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    color: #FFFFFF;
+    background-color: var(--title-text-color);
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 24px;
+}
+.form-input::placeholder{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF; 
+}
+
+.form-btn {
+    cursor: pointer;
+    display: flex;
+    width: 165px;
+    height: 40px;
+
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+
+
+    font-weight: 500;
+    color: #FFFFFF;
+    background: var(--accent-color);
+    border: 0;
+    border-radius: 4px;
 }
 
 /* ----------------Navigation filter----------------- */
@@ -640,4 +688,44 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.form {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-text {
+    color: var(--title-text-color);
+    font-weight: 500;
+    margin-top: 72px;
+    margin-bottom: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 8px;
+}
+
+.form-field label {
+    margin-bottom: 4px;
+}
+
+.form-field input {
+    margin: 0;
+    padding: 8px 16px;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+}
+
+
+.comment textarea {
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
 }
