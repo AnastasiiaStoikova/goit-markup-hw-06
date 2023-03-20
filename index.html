@@ -389,10 +389,10 @@
 
             <div class="form-conteiner">
                 <form>
-                    <h4 class="social-text">Subscribe</h4>
+                    <p class="social-text">Subscribe</p>
 
                     <div class="form-list">
-                        <input class="form-input" type="email" name="email" placeholder="E-mail" aria-label="Email" />
+                        <input class="form-input" type="email" name="email" placeholder="E-mail" aria-label="Email">
 
                         <button class="form-btn" type="submit">Subscribe
                             <svg width="24" height="24">
@@ -416,28 +416,50 @@
                 </svg>
             </button>
 
-            <form class="form" action="">
+            <form>
                 <h4 class="form-text">Leave your contacts and we will call you back</h4>
-                <div class="form-field"><label for="name">Name</label>
-                    <input type="text" name="name" id="name">
+                <div class="form-field">
+                    <label class="field-text" for="name"><span>Name</span></label>
+                    <div class="form-wrapper">
+                        <input type="text" name="name" id="name" required>
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-name"></use>
+                        </svg>
+                    </div>
                 </div>
 
-                <div class="form-field"><label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone">
+                <div class="form-field">
+                    <label class="field-text" for="phone"><span>Phone</span></label>
+                    <div class="form-wrapper">
+                        <input type="tel" name="phone" id="phone" required>
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                    </div>
                 </div>
 
-                <div class="form-field"><label for="mail">Email</label>
-                    <input type="email" name="mail" id="mail">
+
+                <div class="form-field">
+                    <label class="field-text" for="mail"><span>Email</span></label>
+                    <div class="form-wrapper">
+                        <input type="email" name="mail" id="mail" required>
+                        <svg class="form-icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-name"></use>
+                        </svg>
+                    </div>
                 </div>
 
-                <div class="comment"><label for="comment">Comment</label>
-                    <textarea name="comment" id="comment" placeholder="Text input" cols="30" rows="10"></textarea>
+                <div class="comment">
+                    <label class="field-text" for="comment"><span>Comment</span></label>
+                    <textarea name="comment" id="comment" placeholder="Text input"></textarea>
                 </div>
 
-                <div class=""><input type="checkbox" name="policy" id="policy">
-                    <label for="policy">I accept the terms and conditions of the Privacy Policy</label>
-                </div>
-                <button type="submit">Send</button>
+
+                <input class="modal-form-checbox visually-hidden" type="checkbox" name="policy" id="policy">
+                <label class="modal-checkbox" for="policy">I accept the terms and conditions of the&nbsp;
+                    <a href="">Privacy Policy</a></label>
+
+                <button class="modal-submit-btn" type="submit">Send</button>
             </form>
 
         </div>
